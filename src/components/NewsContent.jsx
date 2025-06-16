@@ -97,7 +97,7 @@ const NewsContent = ({ categories, language }) => {
           ))}
         </div>
       )}
-      <Footer/>
+      <Footer language={language}/>
     </div>
   );
 };
