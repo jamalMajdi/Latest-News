@@ -1,0 +1,63 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main-container{
+  animation: showSlowly 0.8s ease forwards;
+  opacity: 0;
+  background-color: rgb(28, 26, 26);
+  color: white;
+}
+.navbar{
+  /* background-color: red !important; */
+  /* color: white !important; */
+}
+.navbar .dropdown-item{
+  color: white !important;
+}
+.navbar-nav .nav-item{
+  cursor: pointer;
+}
+.main-title span{
+  border-radius: 6px;
+}
+
+.cards {
+  /* display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.cards .card{
+  background-color: rgb(40, 38, 38);
+  color: white;
+}
+.cards .app-card{
+  animation: showSlowly 0.6s ease forwards;
+  opacity: 0;
+}
+
+.cards .app-card:nth-child(1) {
+  animation-delay: 0.4s;
+}
+.cards .app-card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+.cards .app-card:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+@keyframes showSlowly {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
