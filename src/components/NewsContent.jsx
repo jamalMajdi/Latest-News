@@ -3,6 +3,7 @@ import CardsOfNews from "./CardsOfNews.jsx";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
+import Footer from "./Footer.jsx";
 
 const NewsContent = ({ categories, language }) => {
   const [news, setNews] = useState([]);
@@ -96,6 +97,7 @@ const NewsContent = ({ categories, language }) => {
           ))}
         </div>
       )}
+      <Footer/>
     </div>
   );
 };

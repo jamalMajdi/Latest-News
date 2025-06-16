@@ -24,14 +24,15 @@
 }
 
 .cards {
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap; */
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  flex-wrap: wrap;
+  /* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); */
   gap: 20px;
 }
+
 .cards .card{
   background-color: rgb(40, 38, 38);
   color: white;
